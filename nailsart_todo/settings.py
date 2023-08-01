@@ -18,6 +18,7 @@ if os.path.exists("env.py"):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_DIR = Path(__file__).resolve().parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,8 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if os.environ.get('DEVELOPMENT'):
+    DEVELOPMENT = True
+    DEBUG = True
+else:
+    DEVELOPMENT = False
+    DEBUG = True
+
 
 ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-amxpqxclns.us2.codeanyapp.com']
 
@@ -41,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +65,7 @@ ROOT_URLCONF = 'nailsart_todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
