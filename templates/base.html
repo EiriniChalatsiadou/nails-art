@@ -4,39 +4,60 @@
 <html lang="en">
 
 <head>
+    <title>Nails art</title>
+    <!-- meta goes here -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
     <link rel="icon" href="{% static 'media/favicon.ico' %}" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <body>
+    <header>
+        <!-- Here is the img for the header -->
+    <div class="logo"></div>
+        <img class="container-img" width="50" src="{% static 'media/header-photo.png' %}" alt="polish">
       <!-- the navigation bar goes here -->
     <nav class="text-center black-background text-center">
-        <a href="#home" aria-label="Go to the top of the page">Home</a>
-        <a href="#services" aria-label="Go to services section">Services</a>
-        <a href="#booking" aria-label="Go to booking section">Booking</a>
-        <a href="#contact" aria-label="Go to contact section">Contact</a>
-        <a href="#log in" aria-label="Go to Log in section">Log in</a>
+        <a href="home" aria-label="Go to the top of the page">Home</a>
+        <a href="services" aria-label="Go to services section">Treatments</a>
+        <a href="booking" aria-label="Go to booking section">Book a treatment</a>
+        <a href="contact" aria-label="Go to contact section">Contact</a>
+        <a href="about-us" aria-label="Go to contact section">About us</a>
+        <a href="log-in" aria-label="Go to Log in section">Log in</a>
     </nav>
     <div id="content">
       <!-- the content goes here -->
       {% block content %}{% endblock %}
     </div>
+    </header>
       <!-- the footer goes here -->
     <footer class="footer mt-auto py-4 ">
-      <p class="m-0 text-center ">Copyright 2023</p>
-      <p class="m-0 text-center ">Follow us: </p>
-      <div class="text-center">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Link to facebook page"><i class="fab fa-facebook-square fa-lg ms-3 "></i></a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Link to twitter page"><i class="fab fa-twitter-square fa-lg ms-3"></i></a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Link to instagram page"><i class="fab fa-instagram-square fa-lg ms-3"></i></a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Link to youtube page"><i class="fab fa-youtube-square fa-lg ms-3"></i></a>
-      </div>
+        <div class="text-center">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Link to facebook page"><i
+                    class="fab fa-facebook-square fa-lg ms-3 " style="color: #a4417b;"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Link to instagram page"><i
+                            class="fab fa-instagram-square fa-lg ms-3" style="color: #a4417b;"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Link to twitter page"><i
+                    class="fab fa-twitter-square fa-lg ms-3" style="color: #a4417b;"></i></a>
+        </div>
           
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/c8dffb0544.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVxUclTq8GCW8VhruSGYe9mcUyel-ZhJM"></script>
+
+
   </body>
 </html>
