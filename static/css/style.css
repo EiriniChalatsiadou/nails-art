@@ -3,3 +3,23 @@
     width: 51px;
 
 }
+
+.main-menu ul li {
+    display: inline;
+}
+
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+
+header a {
+    color: inherit;
+    text-decoration:none;
+}
