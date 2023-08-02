@@ -1,10 +1,11 @@
+/* here goes logo class*/
 .logo {
     background-image: url('/static/media/header-photo.png');
     width: 51px;
     
 
 }
-
+/* here is goes main-menu class*/
 .main-menu ul li {
     display: inline;
     font-family: Gabriola, sans;
@@ -13,7 +14,7 @@
     font-weight: normal;
 }
 
-
+/* here is css code for header*/
 header {
     position: fixed;
     left: 0;
@@ -36,6 +37,7 @@ header a {
 nav {
     padding: 3rem;
 }
+
 .vs-btn {
     float: right;
     border: none;
@@ -46,15 +48,17 @@ nav {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
-
+/* here igoes body css code*/
 body {
     background-image: url(https://i.etsystatic.com/21354202/r/il/a0f934/3637645589/il_794xN.3637645589_md85.jpg);
     background-repeat: no-repeat;
-    max: width 20px;
+    max-width: 20px;
     height: fit-content;
 }
+
+/* here goes the footer css code*/
 footer {
     background-color: rgb(207, 186, 202);
     padding: 1em;
