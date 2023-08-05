@@ -1,10 +1,5 @@
 /* here goes logo class*/
-.logo {
-    background-image: url('/static/media/header-photo.png');
-    width: 51px;
-    
 
-}
 /* here is goes main-menu class*/
 .main-menu ul li {
     display: inline;
@@ -33,7 +28,6 @@ header a {
     font-style: oblique;
 }
 
-
 nav {
     padding: 3rem;
 }
@@ -50,13 +44,16 @@ nav {
     z-index: 1;
     /* vertical-align: middle; */
 }
-/* here igoes body css code*/
-body {
+/* here goes background-container css code*/
+/* #background-container>bg-img{
     background-image: url(https://i.etsystatic.com/21354202/r/il/a0f934/3637645589/il_794xN.3637645589_md85.jpg);
     background-repeat: no-repeat;
+    position: relative;
     max-width: 20px;
-    height: fit-content;
-}
+    height: 50vh;;
+    background-size: cover;
+    background-position: center center;
+} */
 
 /* here goes the footer css code*/
 footer {

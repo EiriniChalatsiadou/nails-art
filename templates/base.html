@@ -14,41 +14,51 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="{% static 'css/style.css' %}" rel="stylesheet" />
     <link rel="icon" href="{% static 'media/favicon.ico' %}" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- header goes here -->
     <header class="px-xl-5 py-2 py-lg-0">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-7 col-md-5 col-lg-2 col-xl-2">
-                    <div class="header-logo">
-                        <a href="/"><img width="100" src="{% static 'media/header-photo.png' %}" alt="Nails Art">
-                            <span>Nails Art</span>
-                        </a>
+        <nav class="main-menu navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Logo -->
+                    <div id="logo" class="col-6 offset-3 offset-lg-0 col-lg-2 col-xl-3  order-md-first">
+                        <!-- Add order-md-first here -->
+                            <a href="/"><img  class="img-fluid" src="{% static 'media/header-photo.png' %}"
+                                    alt="Nails Art"></a>
                     </div>
 
-                </div>
-                <div class="col-5 col-md-4 col-lg-7 col-xl-8">
-                    <nav class="main-menu text-center menu-style1 onepage-nav mobile-menu-active">
-                        <ul>
-                            <li><a href="" aria-label="Go to homepage">Home</a></li>
-                            <li><a href="treatments" aria-label="Go to services section">Treatments</a></li>
-                            <li><a href="booking" aria-label="Go to booking section">Book a treatment</a></li>
-                            <li><a href="contact" aria-label="Go to contact section">Contact</a></li>
-                            <li><a href="about-us" aria-label="Go to about us section">About us</a></li>
-                            <!-- <li><a href="log-in" aria-label="Go to Login section">Login</a></li> -->
-
+                    <!-- Hamburger icon -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-7 col-md-7 col-lg-2 offset-xl-2" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="/"
+                                    aria-label="Go to homepage">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="treatments"
+                                    aria-label="Go to treatment section">
+                                    Treatments</a></li>
+                            <li class="nav-item"><a class="nav-link" href="booking"
+                                    aria-label="Go to booking section">Book
+                                    a treatment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact"
+                                    aria-label="Go to contact section">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us"
+                                    aria-label="Go to about us section">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="log-in"
+                                        aria-label="Go to LogIn section" >Login</a></li>
                         </ul>
-                    </nav>
-                    <button class="vs-menu-toggle d-inline-block d-lg-none"><span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span></button>
+                        <!-- <form class="d-flex main-menu>
+                            <div><a href="log-in" class="vs-btn style-white-hover">Login</a></div>
+
+                        </form> -->
+                    </div>
                 </div>
             </div>
-        </div>
-        <a href="log-in" class="vs-btn style-white-hover">Login</a>
+        </nav>
     </header>
 
     <div id="content">
@@ -70,8 +80,13 @@
 
     </footer>
     <!-- the scripts goes here -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
