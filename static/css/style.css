@@ -9,18 +9,7 @@
     font-weight: normal;
 }
 
-/* here is css code for header*/
-/* header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    -webkit-transition: all ease 0.4s;
-    transition: all ease 0.4s;
-    background-color: rgb(207, 186, 202);
-  } */
-
+/* here is css code for header menu*/
   .main-menu{
     z-index: 999;
     -webkit-transition: all ease 0.4s;
