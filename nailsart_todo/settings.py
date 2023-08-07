@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'home',
     'about_us',
     'contact',
-    'treatments'
+    'treatments',
+    'book_a_treatment'
 ]
 
 MIDDLEWARE = [
