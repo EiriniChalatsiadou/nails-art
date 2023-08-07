@@ -35,7 +35,7 @@ else:
     DEBUG = True
 
 
-ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-amxpqxclns.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
 
 
 # Application definition
