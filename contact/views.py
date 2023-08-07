@@ -25,10 +25,3 @@ class AboutUs(TemplateView):
     """
 
     template_name = "bookAtreatment.html"
-
-    class contact(TemplateView):
-    """
-    Homepage
-    """
-
-    template_name = "contact.html"

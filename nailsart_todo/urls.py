@@ -20,6 +20,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls'), name='home-urls'),
     path('about-us', include('about_us.urls'), name='about.us-urls'),
+    path('treatments', include('treatments.urls'), name='treatments-urls'),
+    path('book-a- treatment', include('book-a- treatment.urls'), name='book-a- treatment-urls'),
+    path('contact', include('contact.urls'), name='contact-urls'),
+    
+    
 
 
 ]
