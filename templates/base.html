@@ -18,51 +18,49 @@
 
 <body>
     <!-- header goes here -->
-        <nav class="main-menu navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Logo -->
-                    <div id="logo" class="col-6 offset-3 offset-lg-0 col-lg-2 col-xl-3  order-md-first">
-                        <!-- Add order-md-first here -->
-                            <a href="/"><img  class="img-fluid" src="{% static 'media/header-photo.png' %}"
-                                    alt="Nails Art"></a>
-                    </div>
+    <nav class="main-menu navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Logo -->
+                <div id="logo" class="col-6 offset-3 offset-lg-0 col-lg-2 col  order-md-fixrst">
+                    <!-- Add order-md-first here -->
+                    <a href="/"><img class="img-fluid" src="{% static 'media/header-photo.png' %}" alt="Nails Art"></a>
+                </div>
 
-                    <!-- Hamburger icon -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col-7 col-md-7 col-lg-1" id="navbarNav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" href="/"
-                                    aria-label="Go to homepage">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="treatments"
-                                    aria-label="Go to treatment section">
-                                    Treatments</a></li>
-                            <li class="nav-item"><a class="nav-link" href="book-a-treatment"
-                                    aria-label="Go to booking section">Book
-                                    a treatment</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact"
-                                    aria-label="Go to contact section">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about-us"
-                                    aria-label="Go to about us section">About us</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="log-in"
-                                        aria-label="Go to LogIn section" >Login</a></li>
-                        </ul>
-                        <!-- <form class="d-flex main-menu>
+                <!-- Hamburger icon -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-7 col-md-7 col-lg-1" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/" aria-label="Go to homepage">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="treatments" aria-label="Go to treatment section">
+                                Treatments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="book-a-treatment"
+                                aria-label="Go to booking section">Book
+                                a treatment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact"
+                                aria-label="Go to contact section">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us"
+                                aria-label="Go to about us section">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login" aria-label="Go to Login section">Login</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex main-menu>
                             <div><a href="log-in" class="vs-btn style-white-hover">Login</a></div>
 
                         </form> -->
-                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- the content goes here -->
-        {% block content %}{% endblock %}
+    <!-- the content goes here -->
+    {% block content %}{% endblock %}
     <!-- the footer goes here -->
-    <footer class="footer mt-auto py-4 ">
+    <footer class="footer mt-auto py-2 ">
         <p class="m-0 text-center ">Copyright © 2023</p>
         <p class="m-0 text-center ">Follow us: </p>
         <div class="text-center">
