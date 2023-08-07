@@ -1,17 +1,36 @@
 {% extends "base.html" %} {% block content %}
 <div class="container">
-    <div class="row mt-5">
-        <div class="col-12 col-md-6">
-            <h1>Welcome to Our Website</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="row my-5">
+        <div class="col-12 col-md-6 contact-details">
+            <div>
+                <h1><b>Contact details</b></h1>
+                <h2><b>Address</b></h2>
+                <div>
+                    <span> Talbot street</span>
+                </div>
+                <div>
+                    <span>co. Dublin</span>
+                </div>
+                <div>
+                    <span>Ireland</span>
+                </div>
+                <h2><b>Phone</b></h2>
+                <p>0123456789</p>
+                <h2><b>Email</b></h2>
+                <p>info@nailsart.com</p>
+            </div>
+            <span>
+                <h2><b>Opening hours</b></h2>
+                Monday - Friday: 9:30 am-20:00 pm
+                <br>
+                Saturday: 9:00 am - 17:30 pm
+                <br>
+                Sunday & Bank Holidays: 12:00 pm - 17:30 pm
+            </span>
         </div>
         <div id="map" class="col-12 col-md-6">
             <h1>Google maps</h1>
         </div>
     </div>
-</div>
 
-
-
-{% endblock %}
-</div>
+    {% endblock %}
