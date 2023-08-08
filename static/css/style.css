@@ -82,6 +82,18 @@ footer {
     height: 85vh;
 }
 
+/* Here goes the class for treatments-image */
+.treatments-image {
+    background-image: url('/static/media/treatments-image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    /* Add padding as needed */
+    color: #fff;
+    /* Set the color of text inside the section */
+    height: 85vh;
+}
 
 /* media */
 @media screen and (min-width: 834.6px) and (max-width: 992px) {
