@@ -45,8 +45,14 @@
                                 aria-label="Go to contact section">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="about-us"
                                 aria-label="Go to about us section">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login" aria-label="Go to Login section">Login</a>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link" href="/accounts/logout" aria-label="Logout">Logout</a>
                         </li>
+                        {% else %}
+                        <li class="nav-item"><a class="nav-link" href="/accounts/login"
+                                aria-label="Go to Login section">Login/Register</a>
+                        </li>
+                        {% endif %}
                     </ul>
                     <!-- <form class="d-flex main-menu>
                             <div><a href="log-in" class="vs-btn style-white-hover">Login</a></div>
