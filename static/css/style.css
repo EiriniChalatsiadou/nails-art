@@ -95,6 +95,18 @@ footer {
     height: 85vh;
 }
 
+.title-heading-center {
+    text-align: center;
+    color: #00002B;
+}
+
+.treatments-image table {
+    margin: auto;
+    color: #00002B;
+    font-family: "Copperplate", fantasy;
+    line-height: 43px;
+}
+
 /* media */
 @media screen and (min-width: 834.6px) and (max-width: 992px) {
     .row {
