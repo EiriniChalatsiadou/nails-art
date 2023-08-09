@@ -1,5 +1,3 @@
-/* here goes logo class*/
-
 /* here is goes main-menu class*/
 .main-menu ul li {
     display: inline;
@@ -25,6 +23,7 @@
     font-style: oblique;
 }
 
+/* nav */
 nav {
     padding: 3rem;
 }
@@ -41,6 +40,7 @@ nav {
     height: 300px;
 }
 
+/* vs-btn */
 .vs-btn {
     float: right;
     border: none;
@@ -95,16 +95,29 @@ footer {
     height: 85vh;
 }
 
+/* title-heading-center section */
 .title-heading-center {
     text-align: center;
     color: #00002B;
 }
 
+/* treatments-image table */
 .treatments-image table {
     margin: auto;
     color: #00002B;
     font-family: "Copperplate", fantasy;
     line-height: 43px;
+}
+
+.background-booking {
+
+    font-size: 20px;
+}
+
+/* background-auth */
+.background-auth {
+    background-color: #E5E8E8;
+
 }
 
 /* media */
