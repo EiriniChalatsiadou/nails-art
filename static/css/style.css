@@ -23,6 +23,11 @@
     font-style: oblique;
 }
 
+#navbarNav .active {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
 /* nav */
 nav {
     padding: 3rem;
