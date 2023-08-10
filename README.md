@@ -1,39 +1,98 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## **Nails Art** ##
 
-Welcome,
+## **FEATURES**
+- ### **DESCRIPTION**
+  
+  This project designed and developed to create a useful experience for the clients of Nails Art. The users are given the possibility to explore and book a treatment and choose the staff member that they like to have the treatment too. <br>
+  All these functionalities can be accessed by any user with an account, considering that the staff members have permissions for controlling the data.
+  Nails Art was developed using Python (Django), HTML, CSS and JavaScript by storing the data in a PostgreSQL database.
+  
+  The fully deployed project can be accessed at
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- ### **TECHNOLOGIES**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+  - [Git](https://git-scm.com/) for version control.
+  - [Gitpod](https://www.gitpod.io/) online IDE.
+  - [GitHub](https://github.com/) for host repository.
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### **Languages Used**
 
-`python3 -m http.server`
+  This tool is created using [Python](https://en.wikipedia.org/wiki/Python_programming_language)
+ language. <br>
+ This tool is created using [HTML](https://en.wikipedia.org/wiki/HTML)language.<br>
+ This tool is created using [CSS](<https://en.wikipedia.org/wiki/CSS>)
+ language. <br>
+ This tool is created using [javascript](https://en.wikipedia.org/wiki/JavaScript)
+ language.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### **Libraries Used**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- Git: For version control These commands were used for version control during project:
+- git add . or git add -A: To add files before committing
+- git commit -m: "type your message mentioning changes" - To commit changes to the local repository
+- git push : To push all committed changes to the GitHub repository
+- GitHub : To create my repositories, save and store my project files.
+- gspread:  is a Python API for Google Sheets and requires Python 3+. It allows user to open, read, write, share spreadsheets. Additionally it enables user to select, create, delete worksheets and to format cell ranges.
+- google auth.: This library provides the ability to authenticate to Google APIs using various methods. It also provides integration with several HTTP libraries.
 
-`http_server`
+- ### **TESTING**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As advised by tutors, I validated Code Institute Python linter, html validator, css validator
+ No errors were found when passing through the official (Python Linter Test) validator
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- ### **UNFIXIDED BUGS**
+  - No bugs
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- ### **DEPLOYMENT**
+  - On the Heroku dashboard, select "New" and click "Create new app"
+  - Create a unique app name
+  - Select your region
+  - Click "Create app"
+  - Go to the settings tab:
+  - Scroll down to the config vars section and select "Reveal Config Vars"
+  - Add necessary config vars
+  - In this case, in the key field enter "PORT" and the value field enter "8000"
+  - Click "Add"
+  - Scroll down to Buildpacks and click "Add buildpack"
+  - Add the necessary buildpacks.
+  - In this case, select "python" and click "Save changes"
+  - Then, select "node.js" and click "Save changes"
+  - Go to the Deploy tab:
+  - Select GitHub and confirm connection to GitHub account
+  - Search for the repository and click "Connect"
+  - Scroll down to the deploy options
+  - Select automatic deploys if you would like automatic deployment with each new push to the GitHub    repository
+  - In manual deploy, select which branch to deploy and click "Deploy Branch"
+  - Heroku will start building the app
+  - The link to the app can be found at the top of the page by clicking "Open app"
+  - The link can be found
 
-To log into the Heroku toolbelt CLI:
+- ### **CREDITS**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Content
+  The content of the website is fictive. it's only for the project.
+  
+- Media
+- [freepngimg.com] for favicon and Logo (<https://freepngimg.com/png/61049-watercolor-what-color-nail-cosmetics-polish-painting/icon>)
+- [pinterest.ie] Homepage background image (<https://www.pinterest.ie/pin/633740978953200202/>)
+- [pinterest.ie] About us page (<https://www.pinterest.ie/pin/733664595561243125/>)
+- [beepmix.com] Treatment page (https://spa.beepmix.com/API/v1.0/uploads/1629309542_755897661_60_a.jpeg)
+- [google.com]background image for details, about us and Login/register
+(<https://www.google.com/search?q=background+images&tbm=isch&ved=2ahUKEwjgjYzK9dGAAxWfTkEAHeZlD18Q2-cCegQIABAA&oq=background+&gs_lcp=CgNpbWcQARgCMgQIIxAnMgQIIxAnMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQ8RhY7Shg7ztoAHAAeACAATeIAboEkgECMTKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=scDUZKDxGJ-dhbIP5su9-AU&bih=743&biw=1440#imgrc=5P7GDAt5_8PXSM>)
+- [fontawesome.com] for the social media in footer (<https://fontawesome.com/icons/twitter?f=brands&s=solid>)
+(<https://fontawesome.com/icons/instagram?f=brands&s=solid>)
+(<https://fontawesome.com/icons/facebook?f=brands&s=solid>)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
 
-Happy coding!
+  - [stackoverflow](https://stackoverflow.com/)
+  - [w3schools](https://www.w3schools.com/)
+  - geeksforgeeks
+  - [diagram](https://app.diagrams.net/)
+
+- ### **ACKNOWLEDGEMENTS**
+
+     I'd like to thank my mentor, Akshat Garg, for providing advices and feedback for this project. Also the tutors and the students for the comments to Slack.
+   
+ 
