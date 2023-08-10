@@ -17,6 +17,4 @@ class Booking(models.Model):
     date = models.DateTimeField(null=False, blank=False)
 
     def __str__(self):
-        return self.user, self.treatment, self.user, self.date; 
-
-
+        return self.user, self.treatment, self.staff, self.date 

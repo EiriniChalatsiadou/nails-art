@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container mx-0 px-0">
+    <div class="row">
+        <div class="col-4 offset-4 mt-5 background-booking">
+
+            {% if not user.is_authenticated %}
+            Please <a href="/accounts/login">sign in</a> in order to make a booking!
+            {% else %}
+            {% if bookings|length == 0 %}
+            <h3>No bookings found. Please make an appointment</h3>
+
+            {% else %}
+            <h3>Book a treatment</h3>
+            <div class="book-a-treatment">
+                Book a treatment
+            </div>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
