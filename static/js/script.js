@@ -2,8 +2,7 @@
 
 // });
 
-
-
+// active nav bar js code//
 $(document).ready(
     function () {
         const dictionary = {
