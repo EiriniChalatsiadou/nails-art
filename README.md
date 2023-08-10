@@ -9,6 +9,9 @@
   
   The fully deployed project can be accessed at
 
+
+  
+
 - ### **TECHNOLOGIES**
 
   - [Git](https://git-scm.com/) for version control.
@@ -74,7 +77,7 @@ As advised by tutors, I validated Code Institute Python linter, html validator, 
   The content of the website is fictive. it's only for the project.
   
 - Media
-- [freepngimg.com] for favicon and Logo (<https://freepngimg.com/png/61049-watercolor-what-color-nail-cosmetics-polish-painting/icon>)
+- [freepngimg.com](https://freepngimg.com/png/61049-watercolor-what-color-nail-cosmetics-polish-painting/icon) for favicon and Logo
 - [pinterest.ie] Homepage background image (<https://www.pinterest.ie/pin/633740978953200202/>)
 - [pinterest.ie] About us page (<https://www.pinterest.ie/pin/733664595561243125/>)
 - [beepmix.com] Treatment page (https://spa.beepmix.com/API/v1.0/uploads/1629309542_755897661_60_a.jpeg)
