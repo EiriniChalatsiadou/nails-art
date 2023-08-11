@@ -112,12 +112,12 @@ This tool is created using[MySQL](https://en.wikipedia.org/wiki/MySQL) language.
 
 As advised by tutors, I validated Code Institute Python linter, html validator, css validator and Js validator
 
-- HTML
-  - No errors were returned when passing through the official W3C validator
-- CSS
-  - No errors were found when passing through the official (Jigsaw) validator
-- Js
-  - No errors were found when passing through the official (jshint) validator
+- [HTML](https://validator.w3.org) errors were returned when passing through the official W3C validator
+- [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri)
+No errors were found when passing through the official validator
+- [Js](https://jshint.com/)
+  No errors were found when passing through the official validator
+- [PEP8 validator](http://ww1.pep8online.com/) used for validating the python code
 
 
 - ### **UNFIXIDED BUGS**
