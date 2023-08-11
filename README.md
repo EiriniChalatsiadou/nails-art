@@ -74,7 +74,7 @@ User can log out. User should be logged in order this page to appear.
 ## Footer
 
  At the footer, you can find the social media links for Facebook, Instagram and Twitter also the copyright for 2023.
-![footer]()
+![footer](/static/media/footer.png)
 
 
 - ### **TECHNOLOGIES**
@@ -82,6 +82,7 @@ User can log out. User should be logged in order this page to appear.
   - [Git](https://git-scm.com/) for version control.
   - [Gitpod](https://www.gitpod.io/) online IDE.
   - [GitHub](https://github.com/) for host repository.
+  - [favicon](https://favicon.io/)for favicon
 
 
 ### **Languages Used**
@@ -148,11 +149,20 @@ As advised by tutors, I validated Code Institute Python linter, html validator, 
 - Color Scheme
 
   - rgb(207, 186, 202)
+  
+  ![color-1](/static/media/color-1.png)
+  
   -  #220622 
+  
+  ![color-2](/static/media/color-2.png)
+  
   - rgb(227, 214, 220)
-  - rgba(17, 16, 16, 0.19) 0px 10px 20px (for the box-shadow)
-  - rgba(19, 15, 15, 0.23) 0px 6px 6px;(for the box shadow)
-
+  
+  ![color-3](/static/media/color-3.png)
+  
+  for the box-shadow:
+  - rgba(17, 16, 16, 0.19) 0px 10px 20px
+  - rgba(19, 15, 15, 0.23) 0px 6px 6px
 - Fonts 
   The fonts I used for the site are:
   - Gabriola, sans
@@ -168,7 +178,7 @@ As advised by tutors, I validated Code Institute Python linter, html validator, 
 
 - Content
   
-  The content of the website is fictive. it's only for the project.
+  The content of the site is fictive. it's only for the project.
   
 - Media
   - [freepngimg.com](https://freepngimg.com/png/61049-watercolor-what-color-nail-cosmetics-polish-painting/icon) favicon and Logo
