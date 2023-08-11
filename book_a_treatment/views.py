@@ -19,6 +19,19 @@ def get_booking_list(request):
 
     return render(request,'booking/list.html', context)
 
+def add_booking(request):
+    if not request.user.is_authenticated:
+        return render(request,'booking/list.html')
+
+    form = BookingForm()
+    context = {
+        'form' : form
+    }
+
+    return render(request,'booking/add.html', context)
+
+
+
 
 
 # class bookAtreatment(TemplateView):
