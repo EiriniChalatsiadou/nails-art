@@ -84,8 +84,9 @@ User can log out. User should be logged in order this page to appear.
   - [GitHub](https://github.com/) - for host repository.
   - [Heroku](https://www.heroku.com/) - for deploying the project
   - [favicon](https://favicon.io/) - for favicon
-  - [fontawsome](https://fontawesome.com/)for creating icons
+  - [fontawsome](https://fontawesome.com/) - for creating icons
   - [Boostrap5](https://getbootstrap.com/) - creating responsiveness
+  - [](https://getbootstrap.com/) - used for creating the Flowchart
 
 
 
@@ -147,6 +148,8 @@ No errors were found when passing through the official validator
   - The link to the app can be found at the top of the page by clicking "Open app"
   - The link can be found
 
+- ### **FLOWCHART**
+
 - ### **SURFACE**
 
 - Color Scheme
@@ -165,8 +168,8 @@ No errors were found when passing through the official validator
   
   - Visual effect
   for the box-shadow:
-   - rgba(17, 16, 16, 0.19) 0px 10px 20px
-   - rgba(19, 15, 15, 0.23) 0px 6px 6px
+    - rgba(17, 16, 16, 0.19) 0px 10px 20px
+    - rgba(19, 15, 15, 0.23) 0px 6px 6px
   
   - Fonts 
   The fonts I used for the site are:
