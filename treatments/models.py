@@ -14,7 +14,6 @@ class Treatment(models.Model):
     treatmentType = models.ForeignKey(TreatmentType, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name, self.price, self.treatmentType
-
+        return f"{self.name} - {self.price} - {self.treatmentType}"
 
 

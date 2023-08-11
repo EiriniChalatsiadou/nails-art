@@ -1,19 +1,31 @@
-{% extends "base.html" %} {% block content %}
-
+{% extends "base.html" %}
+{% block content %}
 <div class="container mx-0 px-0">
     <div class="row">
-        <div class="col-4 offset-4 mt-5 background-booking">
+        <div class="col-8 offset-4 mt-5 background-booking">
             <h1>Add a booking</h1>
-            <form method="POST" action="add">
+            <form method="POST" action="/book-a-treatment/add/">
                 {% csrf_token %}
-                {{form}}
+                {{ form.as_p }}
                 <div>
                     <p>
-                        <button type="submit">Add Appointment</button> 
+                        <button type="submit">Add Appointment</button>
                     </p>
                 </div>
             </form>
-
+            {% if form.errors %}
+            <div class="alert alert-danger mt-3">
+                <strong>Oops! There was an error:</strong>
+                <ul>
+                    {% for field_errors in form.errors.values %}
+                    {% for error in field_errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
+{% endblock %}

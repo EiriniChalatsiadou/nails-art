@@ -1,14 +1,10 @@
-// $('#menu li a').click(function () {
-
-// });
-
 // active nav bar js code//
 $(document).ready(
     function () {
         const dictionary = {
             '/': 'homeMenu',
             '/treatments': 'treatmentsMenu',
-            '/book-a-treatment': 'bookTreatmentMenu',
+            '/book-a-treatment/': 'bookTreatmentMenu',
             '/contact': 'contactMenu',
             '/about-us': 'aboutUsMenu',
             '/accounts/logout/': 'logoutMenu',
@@ -19,8 +15,6 @@ $(document).ready(
 
         $('#navbarNav li>a').removeClass('active');
         $(`#${menuId}`).addClass('active');
-
-        console.log(currentPage, menuId, `#${menuId}`);
     }
 
 

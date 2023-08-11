@@ -13,7 +13,11 @@
             {% else %}
             <h3>Book a treatment</h3>
             <div class="book-a-treatment">
-                Book a treatment
+                <ul>
+                    {% for booking in bookings %}
+                    <li>{{ booking.date }} - {{ booking.treatment }} - {{ booking.staff }}</li>
+                    {% endfor %}
+                </ul>
             </div>
             {% endif %}
             {% endif %}

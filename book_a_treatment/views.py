@@ -1,10 +1,11 @@
 from datetime import date
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.db.models import Q
 from .models import Booking
 from .forms import BookingForm
-
-
+#To BE REMOVED
+import logging, sys
+logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 # from django.views.generic import TemplateView
 
 # Create your views here.
@@ -23,7 +24,17 @@ def add_booking(request):
     if not request.user.is_authenticated:
         return render(request,'booking/list.html')
 
-    form = BookingForm()
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        logging.debug(request.POST)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.user = request.user
+            return redirect('booking-list')
+    else:
+        # GET request, initialize the form
+        form = BookingForm()
+
     context = {
         'form' : form
     }
