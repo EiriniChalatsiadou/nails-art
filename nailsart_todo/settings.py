@@ -32,11 +32,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 if development:
     DEBUG = True
+    ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
 else:
     DEBUG = False
-
-
-ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOST')]
 
 
 # Application definition
