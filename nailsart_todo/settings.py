@@ -12,9 +12,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 if os.path.exists("env.py"):
     import env
+
+development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,12 +30,10 @@ PROJECT_DIR = Path(__file__).resolve().parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
-if os.environ.get('DEVELOPMENT'):
-    DEVELOPMENT = True
+if development:
     DEBUG = True
 else:
-    DEVELOPMENT = False
-    DEBUG = True
+    DEBUG = False
 
 
 ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
@@ -108,12 +109,17 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if development:
+   DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
 
 
 # Password validation

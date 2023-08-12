@@ -1,0 +1,1 @@
+web: gunicorn nailsart_todo.wsgi:application
