@@ -120,6 +120,7 @@ else:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
+DISABLE_COLLECTSTATIC=1    
 
 
 # Password validation
