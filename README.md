@@ -20,13 +20,13 @@
    - Contact 
    - About us
    - Login/Register
-- ![header]()
+![header]()
 
 
 ## Homepage
 
 At homepage, the users can find a welcome content with a nice comment and as a background an image from the Studio.
-![homepage]()
+![homepage](/static/media/homepage-README.png)
 
 ## Treatment page
 
@@ -86,7 +86,9 @@ User can log out. User should be logged in order this page to appear.
   - [favicon](https://favicon.io/) - for favicon
   - [fontawsome](https://fontawesome.com/) - for creating icons
   - [Boostrap5](https://getbootstrap.com/) - creating responsiveness
-  - [](https://getbootstrap.com/) - used for creating the Flowchart
+  - [LucidChart](https://lucidchart.com/) - used for creating the Flowchart
+  - [Google maps](https://www.google.com/) - used for creating the google map fr the contact details
+  
 
 
 ### **Languages Used**
@@ -149,6 +151,7 @@ No errors were found when passing through the official validator
 
 - ### **FLOWCHART**
  - The Flowchart for my program was created using LucidChart and represents how the project works.
+   ![flowchart](/static/media/flowchart.png)
 
 - ### **SURFACE**
 
@@ -202,6 +205,8 @@ No errors were found when passing through the official validator
   - [fontawesome.com](https://fontawesome.com/icons/twitter?f=brands&s=solid) - for the social media in footer
   - [fontawesome.com](https://fontawesome.com/icons/instagram?f=brands&s=solid) - for the social media in footer
   - [fontawesome.com](https://fontawesome.com/icons/facebook?f=brands&s=solid) - for the social media in footer
+  - [fontawesome.com](https://fontawesome.com/v5/icons/edit?f=classic&s=solid) - for the edit button on booking page
+  - [fontawesome.com](https://fontawesome.com/icons/trash?f=classic&s=solid) - for the delete button on booking page
 
 
 
