@@ -27,6 +27,14 @@
                             <td>{{ booking.date }}</td>
                             <td>{{ booking.treatment }}</td>
                             <td>{{ booking.staff }}</td>
+                            <td>
+                                <a class="btn btn-warning btn-sm">
+                                    <i class="fas fa-edit"></i> Update
+                                </a>
+                                <a class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i> Delete
+                                </a>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
