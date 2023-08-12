@@ -6,5 +6,7 @@ class BookingForm(forms.ModelForm):
         model = Booking
         fields = [ 'treatment', 'staff', 'date']
         widgets = {
-            'date': forms.DateTimeInput(attrs={'type': 'datetime-local'}, format='%Y-%m-%dT%H:%M'),
+            'date': forms.DateTimeInput(attrs={'type': 'datetime-local', 'class': 'float-end'}, format='%Y-%m-%dT%H:%M'),
+            'treatment': forms.Select(attrs={'class': 'float-end'}),
+            'staff': forms.Select(attrs={'class': 'float-end'}),
         }

@@ -1,9 +1,8 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="container mx-0 px-0">
+<div class="container-fluid mx-0 px-0">
     <div class="row">
-        <div class="col-md-8 offset-md-4 mt-5 background-booking">
-
+        <div class="col-md-8 offset-md-2 mt-5 background-booking">
             {% if not user.is_authenticated %}
             Please <a href="/accounts/login">sign in</a> in order to make a booking!
             {% else %}
@@ -40,9 +39,7 @@
                     </tbody>
                 </table>
             </div>
-            <a href="/book-a-treatment/add">
-                <div class="btn">Create new Appointment</div>
-            </a>
+            <a href="/book-a-treatment/add" class="btn">Create new Appointment</a>
             {% endif %}
             {% endif %}
         </div>
