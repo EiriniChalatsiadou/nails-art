@@ -89,12 +89,11 @@ User can log out. User should be logged in order this page to appear.
   - [](https://getbootstrap.com/) - used for creating the Flowchart
 
 
-
 ### **Languages Used**
 
   This tool is created using [Python](https://en.wikipedia.org/wiki/Python_programming_language)
  language. <br>
-This tool is created using[MySQL](https://en.wikipedia.org/wiki/MySQL) language.<br>
+This tool is created using[SQL](https://en.wikipedia.org/wiki/SQL) language.<br>
  This tool is created using [HTML](https://en.wikipedia.org/wiki/HTML)language.<br>
  This tool is created using [CSS](<https://en.wikipedia.org/wiki/CSS>)
  language. <br>
@@ -149,6 +148,7 @@ No errors were found when passing through the official validator
   - The link can be found
 
 - ### **FLOWCHART**
+ - The Flowchart for my program was created using LucidChart and represents how the project works.
 
 - ### **SURFACE**
 
@@ -165,6 +165,11 @@ No errors were found when passing through the official validator
   - rgb(227, 214, 220)
   
   ![color-3](/static/media/color-3.png)
+
+  - #773c85
+  - 
+  ![color-4](/static/media/color-4.png)
+
   
   - Visual effect
   for the box-shadow:

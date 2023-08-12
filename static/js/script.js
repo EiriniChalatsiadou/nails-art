@@ -10,11 +10,11 @@ $(document).ready(
             '/accounts/logout/': 'logoutMenu',
             '/accounts/login/': 'loginMenu',
         };
-    
-        const currentPage = window.location.pathname;
-        const matchingPage = Object.keys(dictionary).slice(1).find(key => currentPage.includes(key))
-        const menuId = dictionary[matchingPage  ?? currentPage];
 
+        const currentPage = window.location.pathname;
+        const matchingPage = Object.keys(dictionary).slice(1).find(key => currentPage.includes(key));
+        const menuId = dictionary[matchingPage ?? currentPage];
+        // active navbarNav li>a js code//
         $('#navbarNav li>a').removeClass('active');
         $(`#${menuId}`).addClass('active');
     }

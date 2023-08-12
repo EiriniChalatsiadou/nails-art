@@ -153,7 +153,6 @@ nav {
 
 /* background-booking */
 .background-booking {
-
     font-size: 20px;
 }
 
@@ -172,10 +171,11 @@ footer {
     font-style: oblique;
 }
 
+/* class btn */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #773c85;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -185,6 +185,7 @@ footer {
     font-size: 16px;
 }
 
+/* btn hover */
 .btn:hover {
     background-color: #2980b9;
 }

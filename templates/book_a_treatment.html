@@ -1,9 +1,10 @@
 {% extends "base.html" %} {% block content %}
-
+<!-- container-fluid goes here for book a treatment page-->
 <div class="container mx-0 px-0">
     <div class="row">
         <div class="col-4 offset-4 mt-5 background-booking">
 
+            <!--f not user.is_authenticated-->
             {% if not user.is_authenticated %}
             Please <a href="/accounts/login">sign in</a> in order to make a booking!
             {% else %}
