@@ -10,7 +10,6 @@ $(document).ready(
             '/accounts/logout/': 'logoutMenu',
             '/accounts/login/': 'loginMenu',
         };
-
     
         const currentPage = window.location.pathname;
         const matchingPage = Object.keys(dictionary).slice(1).find(key => currentPage.includes(key))
@@ -19,8 +18,6 @@ $(document).ready(
         $('#navbarNav li>a').removeClass('active');
         $(`#${menuId}`).addClass('active');
     }
-
-
 );
 
 if (window.location.pathname == "/contact") {

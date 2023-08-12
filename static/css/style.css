@@ -103,6 +103,26 @@ nav {
     height: 85vh;
 }
 
+.book-a-treatment {
+    margin-top: 20px;
+}
+
+.book-a-treatment table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.book-a-treatment th,
+.book-a-treatment td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-a-treatment th {
+    background-color: #f2f2f2;
+}
+
 /* Here goes the class for treatments-image */
 .treatments-image {
     background-image: url('/static/media/treatments-image.jpeg');
@@ -150,6 +170,23 @@ footer {
     display: block;
     font-size: 15px;
     font-style: oblique;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
 }
 
 /* media */
