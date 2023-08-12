@@ -63,16 +63,13 @@ def edit_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         # Check if the form is valid
         if form.is_valid():
-            # Save the booking with the current user
-            # booking = form.save(commit=False)
-            # booking.user = request.user
             booking.save()
             # Redirect to the booking list after successful addition
             return redirect('booking-list')
     else:
         # Handle GET request, initialize the form
         form = BookingForm(instance=booking)
-        
+
     # Define context with the form
     context = {
         'form' : form

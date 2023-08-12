@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container mx-0 px-0">
+<div class="container-fluid mx-0 px-0 brick-bg">
     <div class="row">
-        <div id="add-booking-section" class="col-8 offset-2 mt-5 background-booking">
-            <h3>Add a booking</h3>
+        <div id="add-booking-section" class="col-md-8 offset-md-2 col-xxl-6 offset-xxl-3 mt-5 background-booking">
+            <h3>New Appointment</h3>
             <form method="POST" action="/book-a-treatment/add/">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <div>
                     <p>
                         <a href="/book-a-treatment" class="btn">Cancel</a>
-                        <button type="submit" class="btn">Add Appointment</button>
+                        <button type="submit" class="btn">Book</button>
                     </p>
                 </div>
             </form>
