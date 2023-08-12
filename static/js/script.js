@@ -1,4 +1,6 @@
-// active nav bar js code//
+/* jshint esversion: 6 */
+/* globals $:false */
+
 $(document).ready(
     function () {
         const dictionary = {
@@ -34,5 +36,4 @@ if (window.location.pathname == "/contact") {
     }
 
     initMap();
-
 }
