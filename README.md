@@ -7,7 +7,7 @@
   All these functionalities can be accessed by any user with an account, considering that the staff members have permissions for controlling the data.
   Nails Art was developed using Python (Django), HTML, CSS and JavaScript by storing the data in a PostgreSQL database.
   
-  The fully deployed project can be accessed at
+  The fully deployed project can be accessed at [here](https://nails-art-06fcba4b6e97.herokuapp.com/)
 
 ## The header
 
