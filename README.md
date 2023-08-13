@@ -128,6 +128,8 @@ No errors were found when passing through the official validator
 - [PEP8 validator](http://ww1.pep8online.com/) used for validating the python code
 
 ![css-validator](/static/media/css_validator.png)
+![html-validator](/static/media/html-checker.png)
+![js-validator](/static/media/jshint-checker.png)
 
 
 - ### **UNFIXIDED BUGS**
