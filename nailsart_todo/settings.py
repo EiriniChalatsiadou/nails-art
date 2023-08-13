@@ -50,9 +50,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'cloudinary_storage',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
-    # 'cloudinary',
+    'cloudinary',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -125,7 +125,6 @@ else:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-DISABLE_COLLECTSTATIC=1    
 
 
 # Password validation
@@ -166,11 +165,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# MEDIA_URL = '/static/media/'
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL = '/static/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 STATICFILES_DIRS = [
     # BASE_DIR / "static",
