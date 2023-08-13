@@ -38,15 +38,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 if development:
     DEBUG = True
     ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
+    cloudinary.config( 
+        cloud_name = os.environ.get('CLOUDINARY_NAME'), 
+        api_key = os.environ.get('CLOUDINARY_API_SECRET'), 
+        api_secret = os.environ.get('CLOUDINARY_KEY') 
+    )
 else:
     DEBUG = False
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOST')]
 
-cloudinary.config( 
-  cloud_name = os.environ.get('CLOUDINARY_NAME'), 
-  api_key = os.environ.get('CLOUDINARY_API_SECRET'), 
-  api_secret = os.environ.get('CLOUDINARY_KEY') 
-)
 # Application definition
 
 INSTALLED_APPS = [
