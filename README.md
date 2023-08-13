@@ -111,6 +111,21 @@ This tool is created using[SQL](https://en.wikipedia.org/wiki/SQL) language.<br>
 
 ### **Libraries Used**
 
+```
+asgiref==3.7.2
+dj-database-url==0.5.0
+Django==3.2.20
+django-allauth==0.54.0
+gunicorn==21.2.0
+oauthlib==3.2.2
+psycopg2-binary==2.9.7
+PyJWT==2.8.0
+python3-openid==3.2.0
+pytz==2023.3
+requests-oauthlib==1.3.1
+sqlparse==0.4.4
+```
+
 - [Git](https://git-scm.com/) For version control These commands were used for version control during project:
 - git add . or git add -A: To add files before committing
 - git commit -m: "type your message mentioning changes" - To commit changes to the local repository
@@ -130,6 +145,12 @@ No errors were found when passing through the official validator
 ![css-validator](/static/media/css_validator.png)
 ![html-validator](/static/media/html-checker.png)
 ![js-validator](/static/media/jshint-checker.png)
+![pep8-validator](/static/media/pep8.png)
+
+
+## Running some tests:
+ `python3 manage.py test`
+ ![tests](/static/media/tests.png)
 
 
 - ### **UNFIXIDED BUGS**
