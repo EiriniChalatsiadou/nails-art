@@ -1,5 +1,6 @@
 ## **Nails Art** ##
 
+![responsive](/static/media/responsive.png)
 ## **FEATURES**
 - ### **DESCRIPTION**
   
@@ -51,7 +52,7 @@ Finally the user has the opportunity to update or cancel the booking.
 ## Contact page
 
 At this section the user can find the contact details, the opening hours and also a map that pin to the address.
-![contact]()
+![contact](/static/media/contact-us.png)
 
 ## About us
 At this page, the user can find a few words for Nails Art about the team.
@@ -63,11 +64,10 @@ Also has an image from the studio and see how comfortable is.
 At this page, if the user already has an account, can put username and password and log in if authentication is successful.If the user doesnt have an account there is a link to register. User should't be logged in order this page to appear.
  ![login](/static/media/sign-in.png)
 
- 
 ## Register page
 
 User can create an account, by inserting username, password and optionally an email. User should't be logged in order this page to appear.
-![register]()
+![register](/static/media/register.png)
 
 ## Logout page
 
