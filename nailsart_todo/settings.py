@@ -42,6 +42,7 @@ else:
     DEBUG = False
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOST')]
 
+DEBUG=False
 # Application definition
 
 INSTALLED_APPS = [
