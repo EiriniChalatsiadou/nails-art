@@ -72,7 +72,7 @@ nav {
 
 /* brick background */
 .brick-bg {
-    background-image: url('/static/media/background-image.jpg');
+    background-image: url('https://res.cloudinary.com/dhszmos5p/image/upload/f_auto,q_auto/v1/static/media/background-image.32e0a9dd6cd1');
 }
 
 /* map */
@@ -96,7 +96,7 @@ nav {
 
 /* here goes the bg-image */
 .bg-image {
-    background-image: url('/static/media/homepage-image.jpg');
+    background-image: url('https://res.cloudinary.com/dhszmos5p/image/upload/f_auto,q_auto/v1/static/media/homepage-image.7279758ec399');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -133,7 +133,7 @@ nav {
 
 /* Here goes the class for treatments-image */
 .treatments-image {
-    background-image: url('/static/media/treatments-image.jpeg');
+    background-image: url('https://res.cloudinary.com/dhszmos5p/image/upload/v1691889156/static/media/treatments-image.265745f457f9.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

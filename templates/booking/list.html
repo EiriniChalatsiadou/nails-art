@@ -4,7 +4,9 @@
     <div class="row">
         <div class="col-md-8 offset-md-2 mt-5 background-booking">
             {% if not user.is_authenticated %}
-            Please <a href="/accounts/login">sign in</a> in order to make a booking!
+            <p>
+                Please <a href="/accounts/login">sign in</a> in order to make a booking!
+            </p>
             {% else %}
             {% if bookings|length == 0 %}
             <h3>No bookings found. Please make an appointment</h3>
