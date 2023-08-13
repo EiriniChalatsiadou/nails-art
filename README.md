@@ -20,7 +20,7 @@
    - Contact 
    - About us
    - Login/Register
-![header]()
+![header](/static/media/header.png)
 
 
 ## Homepage
@@ -36,14 +36,17 @@ At this page the users can find the treatments to make pretty their nails!
   - Gel nails
   - Manicure
   - Pedicure
-![treatment page]()
+  
+![treatment page](/static/media/treatments_screenshot.png)
 
 ## Book a treatment page
 
 At this sectionauthe, the user can book a treatment.
 The user can choose the treatment that pleasure, the date and the time and also the staff member that prefers.
-Finally the user has the opportunity to cancel the booking.
-![book a treatment]()
+Finally the user has the opportunity to update or cancel the booking.
+![create](/static/media/create-appointment.png)
+
+![upcoming](/static/media/upcoming-appointments.png)
 
 ## Contact page
 
@@ -58,7 +61,7 @@ Also has an image from the studio and see how comfortable is.
 ## Login page
 
 At this page, if the user already has an account, can put username and password and log in if authentication is successful.If the user doesnt have an account there is a link to register. User should't be logged in order this page to appear.
- ![login]()
+ ![login](/static/media/sign-in.png)
 
  
 ## Register page
@@ -69,7 +72,7 @@ User can create an account, by inserting username, password and optionally an em
 ## Logout page
 
 User can log out. User should be logged in order this page to appear.
-![logout]()
+![logout](/static/media/sign-out.png)
 
 ## Footer
 
@@ -88,6 +91,7 @@ User can log out. User should be logged in order this page to appear.
   - [Boostrap5](https://getbootstrap.com/) - creating responsiveness
   - [LucidChart](https://lucidchart.com/) - used for creating the Flowchart
   - [Google maps](https://www.google.com/) - used for creating the google map fr the contact details
+  - [Cloudinary](https://cloudinary.com/) -  for storing static data
   
 
 
@@ -114,12 +118,14 @@ This tool is created using[SQL](https://en.wikipedia.org/wiki/SQL) language.<br>
 
 As advised by tutors, I validated Code Institute Python linter, html validator, css validator and Js validator
 
-- [HTML](https://validator.w3.org) errors were returned when passing through the official W3C validator
+- [HTML](https://validator.w3.org) No errors were returned when passing through the official W3C validator
 - [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri)
 No errors were found when passing through the official validator
 - [Js](https://jshint.com/)
   No errors were found when passing through the official validator
 - [PEP8 validator](http://ww1.pep8online.com/) used for validating the python code
+
+![css-validator](/static/media/css_validator.png)
 
 
 - ### **UNFIXIDED BUGS**
@@ -189,6 +195,8 @@ No errors were found when passing through the official validator
    The project was developed by Agile methodology.
    The implementation progress was registered by [Jira](https://www.atlassian.com/software/jira)
    The tasks were accomplished, there moved to Jira from to do, to in Progress, Tests and Done lists.
+    - - examples of Jira:
+  ![Jira](/static/media/jira-1.png) - ![Jira](/static/media/jira-2.png) - 
 
 - ### **CREDITS**
 
@@ -207,9 +215,6 @@ No errors were found when passing through the official validator
   - [fontawesome.com](https://fontawesome.com/icons/facebook?f=brands&s=solid) - for the social media in footer
   - [fontawesome.com](https://fontawesome.com/v5/icons/edit?f=classic&s=solid) - for the edit button on booking page
   - [fontawesome.com](https://fontawesome.com/icons/trash?f=classic&s=solid) - for the delete button on booking page
-
-
-
   - [stackoverflow](https://stackoverflow.com/)
   - [w3schools](https://www.w3schools.com/)
   - [geeksforgeeks](https://www.geeksforgeeks.org/)
