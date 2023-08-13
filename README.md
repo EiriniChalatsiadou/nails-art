@@ -48,6 +48,8 @@ Finally the user has the opportunity to update or cancel the booking.
 ![create](/static/media/create-appointment.png)
 
 ![upcoming](/static/media/upcoming-appointments.png)
+![upcoming-first-time](/static/media/create-booking-first-time.png)
+![edit-booking](/static/media/edit-booking.png)
 
 ## Contact page
 

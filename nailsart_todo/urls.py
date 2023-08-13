@@ -18,11 +18,30 @@ from django.urls import path, include
 from allauth.account.views import login, signup, logout
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('home.urls'), name='home-urls'),
-    path('about-us', include('about_us.urls'), name='about.us-urls'),
-    path('contact', include('contact.urls'), name='contact-urls'),
-    path('treatments', include('treatments.urls'), name='treatments-urls'),
-    path('book-a-treatment/', include('book_a_treatment.urls'), name='book-a-treatment-urls'),
-    path('accounts/', include('allauth.urls')),
+    path(
+        'admin/',
+        admin.site.urls),
+    path(
+        '',
+        include('home.urls'),
+        name='home-urls'),
+    path(
+        'about-us',
+        include('about_us.urls'),
+        name='about.us-urls'),
+    path(
+        'contact',
+        include('contact.urls'),
+        name='contact-urls'),
+    path(
+        'treatments',
+        include('treatments.urls'),
+        name='treatments-urls'),
+    path(
+        'book-a-treatment/',
+        include('book_a_treatment.urls'),
+        name='book-a-treatment-urls'),
+    path(
+        'accounts/',
+        include('allauth.urls')),
 ]

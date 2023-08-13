@@ -15,7 +15,7 @@ $(document).ready(
 
         const currentPage = window.location.pathname;
         const matchingPage = Object.keys(dictionary).slice(1).find(key => currentPage.includes(key));
-        const menuId = dictionary[matchingPage !== null ? matchingPage : currentPage];
+        const menuId = dictionary[matchingPage !== undefined ? matchingPage : '/'];
         // active navbarNav li>a js code//
         $('#navbarNav li>a').removeClass('active');
         $(`#${menuId}`).addClass('active');

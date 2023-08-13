@@ -17,9 +17,13 @@ class Treatments(TemplateView):
         context = super(Treatments, self).get_context_data(**kwargs)
 
         # get all treatments of specific type
-        context['shellac'] = Treatment.objects.filter(treatmentType__name__contains="Shellac")
-        context['gel_nails'] = Treatment.objects.filter(treatmentType__name__contains="Gel nails")
-        context['manicure'] = Treatment.objects.filter(treatmentType__name__contains="Manicure")
-        context['pedicure'] = Treatment.objects.filter(treatmentType__name__contains="Pedicure")
+        context['shellac'] = Treatment.objects.filter(
+            treatmentType__name__contains="Shellac")
+        context['gel_nails'] = Treatment.objects.filter(
+            treatmentType__name__contains="Gel nails")
+        context['manicure'] = Treatment.objects.filter(
+            treatmentType__name__contains="Manicure")
+        context['pedicure'] = Treatment.objects.filter(
+            treatmentType__name__contains="Pedicure")
 
         return context

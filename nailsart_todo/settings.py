@@ -17,7 +17,6 @@ import cloudinary_storage
 import cloudinary
 
 
-
 if os.path.exists("env.py"):
     import env
 
@@ -37,11 +36,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 if development:
     DEBUG = True
-    ALLOWED_HOSTS = ['8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
-    cloudinary.config( 
-        cloud_name = os.environ.get('CLOUDINARY_NAME'), 
-        api_key = os.environ.get('CLOUDINARY_API_SECRET'), 
-        api_secret = os.environ.get('CLOUDINARY_KEY') 
+    ALLOWED_HOSTS = [
+        '8000-eirinichalatsiadou-nails-euy5okwyic.us2.codeanyapp.com']
+    cloudinary.config(
+        cloud_name=os.environ.get('CLOUDINARY_NAME'),
+        api_key=os.environ.get('CLOUDINARY_API_SECRET'),
+        api_secret=os.environ.get('CLOUDINARY_KEY')
     )
 else:
     DEBUG = False
@@ -115,12 +115,11 @@ LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if development:
-   DATABASES = {
+    DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',

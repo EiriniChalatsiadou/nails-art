@@ -2,11 +2,13 @@ from django.db import models
 
 # Create your models here.
 
+
 class TreatmentType(models.Model):
     name = models.CharField(max_length=50, null=False, blank=False)
 
     def __str__(self):
         return self.name
+
 
 class Treatment(models.Model):
     name = models.CharField(max_length=100, null=False, blank=False)
@@ -15,5 +17,3 @@ class Treatment(models.Model):
 
     def __str__(self):
         return f"{self.treatmentType} - {self.name} : {self.price}€"
-
-
